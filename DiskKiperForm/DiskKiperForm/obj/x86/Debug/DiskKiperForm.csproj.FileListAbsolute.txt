@@ -1,0 +1,6 @@
+D:\Develop\github\DesctopKeeper\DiskKiperForm\DiskKiperForm\bin\Debug\DiskKiperForm.exe
+D:\Develop\github\DesctopKeeper\DiskKiperForm\DiskKiperForm\bin\Debug\DiskKiperForm.pdb
+D:\Develop\github\DesctopKeeper\DiskKiperForm\DiskKiperForm\obj\x86\Debug\DiskKiperForm.Properties.Resources.resources
+D:\Develop\github\DesctopKeeper\DiskKiperForm\DiskKiperForm\obj\x86\Debug\DiskKiperForm.csproj.GenerateResource.Cache
+D:\Develop\github\DesctopKeeper\DiskKiperForm\DiskKiperForm\obj\x86\Debug\DiskKiperForm.exe
+D:\Develop\github\DesctopKeeper\DiskKiperForm\DiskKiperForm\obj\x86\Debug\DiskKiperForm.pdb
