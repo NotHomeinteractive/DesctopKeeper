@@ -4,77 +4,59 @@ using System.Linq;
 using System.Windows.Forms;
 //подключаить библиотеку для работы с файловой системой
 using System.IO;
+using System.Drawing;
+using System.Threading;
 namespace Searcher
 {
     static class Program
     {
-        
+        static Form1 Myform = new Form1();
         //       Application.EnableVisualStyles();
         //       Application.SetCompatibleTextRenderingDefault(false);
         //       Application.Run(new Form1());
+        //класс чтения параметров для поиска данных 
 
-
-        /*функция поиска файлов в директории передаваемой в параметр patch 
-         по его имени или маске передаваемой в параметре pattern
-        */
-        static string[] SearchFile(string patch, string pattern)
+        
+        //обработка нажатия клавиш на иконке 
+        private static void notifyIcon1_DoubleClick(object Sender, EventArgs e)
         {
-            /*флаг SearchOption.AllDirectories означает искать во всех вложенных папках*/
-            string[] ReultSearch = Directory.GetFiles(patch, pattern, SearchOption.AllDirectories);
-            //возвращаем список найденных файлов соответствующих условию поиска 
-            return ReultSearch;
+            //завершаем программу пока что 
+            Myform.FormShow = true;
         }
 
-        /*функция нахождения директорий в указанному пути*/
-        static string[] SearchDirectory(string patch)
+    
+
+        static void startApp() 
         {
-            //находим все папки в по указанному пути
-            string[] ReultSearch = Directory.GetDirectories(patch);
-            //возвращаем список директорий
-            return ReultSearch;
+
+            //создаем класс иконки в окне уведомлений
+            NotifyIcon MyIcon = new NotifyIcon();
+            //загружаем файл с иконкой 
+            MyIcon.Icon = new Icon("JSB.ico");
+            //показываем иконку в панели
+            MyIcon.Visible = true;
+            //добавляем обработчик нажатия клавиши на иконке 
+            MyIcon.Click += notifyIcon1_DoubleClick;
+            
+            
+            //запускаем форму в полет 
+            Application.Run(Myform);
+
+
         }
-
-
+        
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
         [STAThread]
         static void Main()
         {
-            //получаем текущее время
-            DateTime Currenttime = DateTime.Now;
            
-            //получаем переменную Windows с адресом текущего пользователя
-            string PatchProfile = Environment.GetEnvironmentVariable("USERPROFILE");
-            //PatchProfile = @"D:\";
-            //ищем все вложенные папки 
-            string[] S = SearchDirectory(PatchProfile);
-            //создаем строку в которой соберем все пути
-            string ListPatch="найденные файлы \n"; //заголовок для строк
-            foreach (string folderPatch in S) 
-            {
-                //добавляем новую строку в список
-               // ListPatch += folderPatch + "\n";
-                try
-                {
-                    //пытаемся найти данные в папке 
-                    string[] F = SearchFile(folderPatch, "*.png");
-                    foreach (string FF in F) 
-                    {
-                        //добавляем файл в список 
-                        ListPatch += FF + "\n";
-                    }
-                }
-                catch 
-                { 
-                }
-            }
-            //получаем текущее время
-            DateTime FinishTime = DateTime.Now;
+            
+            startApp();
 
-
-            //выводим список на экран 
-            MessageBox.Show("поиск занял " + (FinishTime - Currenttime).ToString() + " найдено " + ListPatch);
         }
+
+    
     }
 }

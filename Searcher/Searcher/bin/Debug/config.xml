@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ConfigFilds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <REM_1>папки для поиска в профиле перечисляем через ; например Desktop;Мои документы; и так далее</REM_1>
+  <Patchs>Desktop;Мои документы;</Patchs>
+  <REM_2>расширения файлов которые нужно убрать с рабочего стола перечисляем через запятую jpeg;png;avi</REM_2>
+  <Extension>png;jpeg;avi</Extension>
+  <REM_3>Пауза между проверками в секундах</REM_3>
+  <Pausa>30</Pausa>
+</ConfigFilds>

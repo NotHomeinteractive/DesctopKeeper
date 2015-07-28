@@ -5,3 +5,4 @@ D:\Develop\github\DesctopKeeper\Searcher\Searcher\obj\x86\Debug\Searcher.csproj.
 D:\Develop\github\DesctopKeeper\Searcher\Searcher\obj\x86\Debug\Searcher.exe
 D:\Develop\github\DesctopKeeper\Searcher\Searcher\obj\x86\Debug\Searcher.pdb
 D:\Develop\github\DesctopKeeper\Searcher\Searcher\obj\x86\Debug\Searcher.csprojResolveAssemblyReference.cache
+D:\Develop\github\DesctopKeeper\Searcher\Searcher\obj\x86\Debug\Searcher.Form1.resources
