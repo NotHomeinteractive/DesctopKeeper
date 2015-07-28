@@ -1,0 +1,7 @@
+D:\Develop\github\DesctopKeeper\Searcher\Searcher\bin\Debug\Searcher.exe
+D:\Develop\github\DesctopKeeper\Searcher\Searcher\bin\Debug\Searcher.pdb
+D:\Develop\github\DesctopKeeper\Searcher\Searcher\obj\x86\Debug\Searcher.Properties.Resources.resources
+D:\Develop\github\DesctopKeeper\Searcher\Searcher\obj\x86\Debug\Searcher.csproj.GenerateResource.Cache
+D:\Develop\github\DesctopKeeper\Searcher\Searcher\obj\x86\Debug\Searcher.exe
+D:\Develop\github\DesctopKeeper\Searcher\Searcher\obj\x86\Debug\Searcher.pdb
+D:\Develop\github\DesctopKeeper\Searcher\Searcher\obj\x86\Debug\Searcher.csprojResolveAssemblyReference.cache
